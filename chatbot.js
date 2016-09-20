@@ -12,8 +12,8 @@ var question
 
 function talkInput(){
 inputTalk = document.getElementById("input").value;
-//document.getElementById("chat-area").textContent += inputTalk;
-question = inputTalk + "<br>";
+//document.getElemmentById("chat-area").textContent += inputTalk;
+question = "Lorenzo: " + inputTalk + "<br>";
 document.getElementById("chat-area").innerHTML += question;
 
 
