@@ -3,7 +3,7 @@
 var inputTalk
 var question
 
-var answer
+
 
 
 
@@ -16,11 +16,14 @@ inputTalk = document.getElementById("input").value;
 question = "LeSean James: " + inputTalk + "<br>";
 document.getElementById("chat-area").innerHTML += question;
 
+
 var n = question.search(/how are you/i);
 console.log(n);
 
 inputTalk = document.getElementById("input").value = null;
 
+
 if(n > -1){
-  answer = "Martin Luther: I am well";
+  document.getElementById("chat-area").innerHTML += "Martin Luther: I am well, I am glad to see the direction that society has gone " + "<br>";
+}
 }
