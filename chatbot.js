@@ -23,8 +23,13 @@ var t = question.search(/time/i);
 var u = question.search(/year/i);
 var v = question.search(/day/i);
 var w = question.search(/date/i);
-var e = question.search(/picture/);
+var e = question.search(/picture/i);
 var da = new Date(Date.now());
+var pic = ["http://new3.fjcdn.com/comments/Fun+fact+diamonds+are+not+valuable+previous+or+rare+but+_c6d2a1d43b3782715a23aadfc13b0050.jpg",
+"http://i2.kym-cdn.com/photos/images/original/000/783/510/50f.jpg"];
+function randomNumberGenerator(min, max){
+return Math.floor(Math.random*(max-min+1)-min);
+}
 console.log(n);
 
 inputTalk = document.getElementById("input").value = null;
@@ -50,9 +55,9 @@ if(v > -1){
 if(w > -1){
   document.getElementById("chat-area").innerHTML += "Martin Luther: The date is the " + da.getDate() + "th day of the " + da.getMonth() + "th + 1th month. Is that that the type of date you meant?" + "<br>";
 }
-else if(e > -1){
+ if(e > -1){
   var x = document.createElement("IMG");
-  x.setAttribute("src", "http://cdn.funnyisms.com/c6269df2-fc86-42e9-8aa3-28943c490e19.jpg");
+  x.setAttribute("src", pic(randomNumberGenerator(0,1)));
   x.setAttribute("width", "350");
   x.setAttribute("alt", "img");
   document.getElementById("chat-area").innerHTML += "Martin Luther: So you want a picture do you?";
