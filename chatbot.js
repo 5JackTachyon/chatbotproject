@@ -35,7 +35,7 @@ var reaction = ["I am well, I am glad to see the direction that society has gone
 var notListening = ["Huh, I never noticed how grey the sky looks when you look at it through cement.",
 "I have an answer to a lot, but my knowledge in not infinte.",
 "You have a chance to talk to the MASTER OF THE UNIVERSE!!!! and you choose to talk about this!!!!",
-"NO, just no, I have a history with that that you can't understand"];
+"NO, just no, I have a history with that that you can't understand!"];
 
 function randomNumberGenerator(min, max){
 return Math.floor(Math.random()*(max-min+1)+min);
