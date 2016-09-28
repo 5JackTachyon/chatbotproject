@@ -44,6 +44,14 @@ console.log(n);
 
 inputTalk = document.getElementById("input").value = null;
 
+function uniKeyCode(event) {
+    var key = event.keyCode;
+    if(key == 13){
+      document.getElementById("chat-area").innerHTML += question;
+    }
+
+}
+
 
 if(n > -1){
   document.getElementById("chat-area").innerHTML += "MASTER OF THE UNIVERSE!!!!: "+ reaction[randomNumberGenerator(0,4)] + "<br>";
