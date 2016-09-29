@@ -24,6 +24,8 @@ var u = question.search(/year/i);
 var v = question.search(/day/i);
 var w = question.search(/date/i);
 var e = question.search(/picture/i);
+var x = question.search(/link/i);
+var y = question.search(/special/i);
 var da = new Date(Date.now());
 var img = ["http://new3.fjcdn.com/comments/Fun+fact+diamonds+are+not+valuable+previous+or+rare+but+_c6d2a1d43b3782715a23aadfc13b0050.jpg",
 "http://i2.kym-cdn.com/photos/images/original/000/783/510/50f.jpg"];
@@ -76,6 +78,13 @@ else if(w > -1){
   document.getElementById("chat-area").appendChild(x);
   document.getElementById("chat-area").innerHTML += "<br>";
 
+}
+else if(x > -1){
+  document.getElementById("chat-area").innerHTML += "MASTER OF THE UNIVERSE!!!!: So you want a webpage link do you?" + "<a href=" + "http://www.hostgator.com/" + ">Link</a> <br>";
+}
+else if(y > -1){
+document.getElementById("chat-area").innerHTML += "MASTER OF THE UNIVERSE!!!!: " + "<marquee direction="down" width="250" height="200" behavior="alternate" style="border:solid">
+ <marquee behavior="alternate"> So you want to see something special do you? </marquee>   </marquee> "+ "<br>";
 }
 else{
   document.getElementById("chat-area").innerHTML += "MASTER OF THE UNIVERSE!!!!: " + notListening[randomNumberGenerator(0,3)]  + "<br>";
