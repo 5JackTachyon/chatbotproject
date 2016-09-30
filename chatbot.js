@@ -24,6 +24,7 @@ var u = question.search(/year/i);
 var v = question.search(/day/i);
 var w = question.search(/date/i);
 var e = question.search(/picture/i);
+var f = question.search(/bored/i);
 var x = question.search(/link/i);
 var y = question.search(/special/i);
 var z = question.search(/mistake/i);
@@ -89,12 +90,29 @@ document.getElementById("chat-area").innerHTML += "<marquee>" + "MASTER OF THE U
 else if(z > -1){
 document.getElementById("chat-area").innerHTML += "<strike>" + "MASTER OF THE UNIVERSE!!!!: This is a bigger mistake. " + "</strike>" + "<br>";
 }
+else if(f > -1){
+document.getElementById("chat-area").innerHTML += "<details>" + "<summary>" + "<dfn>" + "MASTER OF THE UNIVERSE!!!!: This is the best I can offer." + "</dfn>" + "</summary>" + "<p>" + "Just kidding" + "</p>" + "</details>" + "<br>";
+}
 
 else{
   document.getElementById("chat-area").innerHTML += "MASTER OF THE UNIVERSE!!!!: " + notListening[randomNumberGenerator(0,3)]  + "<br>";
 }
 
 }
+
+function askInput(){
+var asker = ["What is your occupation?", "How old are you?", "Do you even code bro?"];
+
+function randomNumberGenerator(min, max){
+return Math.floor(Math.random()*(max-min+1)+min);
+}
+
+document.getElementById("chat-area").innerHTML += "MASTER OF THE UNIVERSE!!!!: " + asker[randomNumberGenerator(0,2)] + "<br>";
+
+
+}
+
+
 function uniKeyCode(event) {
     var key = event.keyCode;
     if(key == 13){
