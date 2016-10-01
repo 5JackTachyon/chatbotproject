@@ -76,19 +76,20 @@ else if(w > -1){
   x.setAttribute("src", img[randomNumberGenerator(0,1)]);
   x.setAttribute("width", "350");
   x.setAttribute("alt", "img");
-  document.getElementById("chat-area").innerHTML += "MASTER OF THE UNIVERSE!!!!: So you want a picture do you?";
+  document.getElementById("chat-area").innerHTML +=  "MASTER OF THE UNIVERSE!!!!: So you want a picture do you?";
   document.getElementById("chat-area").appendChild(x);
   document.getElementById("chat-area").innerHTML += "<br>";
 
 }
 else if(x > -1){
-  document.getElementById("chat-area").innerHTML += "MASTER OF THE UNIVERSE!!!!: So you want a webpage link do you?" + "<a href=" + "http://www.hostgator.com/" + ">Link</a> <br>";
+  document.getElementById("chat-area").innerHTML +=  " MASTER OF THE UNIVERSE!!!!: So you want a webpage link do you?  Backwards words" + "<bdo dir = " + "rtl" + ">"
+   + "  MASTER OF THE UNIVERSE!!!!: So you want a webpage link do you?  " + "</bdo>" + "<a href=" + "http://www.hostgator.com/" + ">Link</a> <br>";
 }
 else if(y > -1){
-document.getElementById("chat-area").innerHTML += "<marquee>" + "MASTER OF THE UNIVERSE!!!!: So you want to see something special do you?" + "</marquee>" + "<br>";
+document.getElementById("chat-area").innerHTML += "<marquee>" + "MASTER OF THE UNIVERSE!!!!: So you want to see something special do you?" + "<bdi>" + "إيان" + "</bdi>" + "</marquee>" + "<br>";
 }
 else if(z > -1){
-document.getElementById("chat-area").innerHTML += "<strike>" + "MASTER OF THE UNIVERSE!!!!: This is a bigger mistake. " + "</strike>" + "<br>";
+document.getElementById("chat-area").innerHTML += "<strike>" + "<dl>" + "<dt>" + "MASTER OF THE UNIVERSE!!!!:" + "</dt>" + "<dd>" + "This is a bigger mistake. " + "</dd>" + "</dl>" + "</strike>" + "<br>";
 }
 else if(f > -1){
 document.getElementById("chat-area").innerHTML += "<details>" + "<summary>" + "<dfn>" + "MASTER OF THE UNIVERSE!!!!: This is the best I can offer." + "</dfn>" + "</summary>" + "<p>" + "Just kidding" + "</p>" + "</details>" + "<br>";
